@@ -34,9 +34,3 @@ services:
           - "./.env"
         depends_on:
           - db
-
-    redis:
-        image: redis:4.0.2
-        hostname: redis
-        volumes:
-          - "./volumes/redis:/data"
